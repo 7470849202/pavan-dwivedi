@@ -1,0 +1,123 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Stock Market Dashboard</h1>
+        </header>
+        <main>
+            <div class="watchlist">
+                <h2>Watchlist</h2>
+                <ul id="watchlist">
+                    <!-- Watchlist items will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="stock-details">
+                <h2>Stock Details</h2>
+                <div id="stock-info">
+                    <!-- Stock details will be displayed here -->
+                </div>
+            </div>
+        </main>
+        <section class="search-section">
+            <input type="text" id="search" placeholder="Search for stocks...">
+            <table id="stock-table">
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Stock list will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Fetch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+<body>
+    <h1>IBM Stock Daily Data</h1>
+    <button id="load-csv">Load CSV Data</button>
+    <table id="csv-table">
+        <thead>
+            <tr id="table-head"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+<body>
+    <h1>Stock Price Prediction</h1>
+
+    <!-- Stock Detail Section -->
+    <div id="stock-details">
+        <h2>Stock Details</h2>
+        <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g., IBM)">
+        <button id="get-details">Get Stock Details</button>
+        <div id="stock-info">
+            <p><strong>Company Name:</strong> <span id="company-name">N/A</span></p>
+            <p><strong>Symbol:</strong> <span id="company-symbol">N/A</span></p>
+            <p><strong>Current Price:</strong> <span id="current-price">N/A</span></p>
+            <p><strong>Market Cap:</strong> <span id="market-cap">N/A</span></p>
+        </div>
+    </div>
+
+    <!-- CSV Data Table -->
+    <button id="load-csv">Load CSV Data</button>
+    <table id="csv-table">
+        <thead>
+            <tr id="table-head"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+</html>
+
+
+</html>
